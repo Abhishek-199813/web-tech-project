@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order food</title>
+    <link rel="stylesheet" href="home.css">
+   
+    
+</head>
+
+
+
+<body style="background-color: whitesmoke;">
+    <section id="section-1">
+        <div class="f-l w-60">
+<div class="f-r w-75">
+    <div class="navbar" >
+        <img src="images/logo.png" class = "logo1" alt="Avatar" width="240px" height="100%"/>
+        <div class="nav-btns">
+            <button class="login" id="myBtn1" onclick="runModal1()">Login</button>
+
+
+            <div id="myModal1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <iframe src="login.html" class="frame" title="description"></iframe>
+                </div>
+              
+              </div>
+
+
+            <button class="signup" id="myBtn2"  onclick="runModal2()">Sign up</button>
+
+            <div id="myModal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <iframe src="signup.html" class="frame" title="description2"></iframe>
+                </div>
+              
+              </div>
+        </div>
+    </div>
+    
+    
+   
+    <div id="typewriter" class="changing"></div>
+
+
+    <p class="sub-head"><i> Order food from favourite restuarants near you</i></p>
+
+    <button class="button button1" onclick="location.href='secondpage.html'" type="button">Order you Favourite food directly.</button>
+
+    
+</div>
+        </div>
+        <div class="f-r w-40">
+            <img src="images/food.jpg" width="100%" height="100%"/>
+        </div>
+    </section>
+
+
+
+    <section id="section-2">
+        <div class="flex-row">
+        <div class = "flex-row-1" >
+        <img class = "image-1" src="images/4x_-_No_min_order_x0bxuf.webp"  width="100px" height="100px"/>
+        <p class="head-2" id="head-2-1">No Minimum Order</p>
+        <p class="sub-head-2" id="head-2-1">Order on for yourself or for the group,with no restrictions on order value</p>
+        </div> 
+         <div class = "flex-row-2" >
+            <img class = "image-2" src="images/track2.png" width="100px" height="100px"/>
+            <p class="head-2" id="head-2-2">Live Order Tracking</p>
+            <p class="sub-head-2" id="head-2-2">Know where your order is at all times, from the restaurant to your doorstep</p>
+            </div>
+            <div  class = "flex-row-3">
+                <img class = "image-3" src="images/deliv.png" width="100px" height="100px"/>
+                <p class="head-2" id="head-2-3">Lightning-Fast Delivery</p>
+                <p class="sub-head-2" id="head-2-3">Experience Swiggy's superfast delivery for food delivered fresh & on time</p>
+                </div>
+    </section>
+
+
+
+    <section id="section-3">
+        <div class = "Sec-3-1">
+        <div class = "Sec-3-1-1">
+            <h class="sec-head"><b>Restaurant in your Pocket</b></h2>
+        <div class="flex-row">
+            
+            <img class = "i-1" src="images/play_ip0jfp.webp"/>
+            <img class = "i-2" src="images/iOS_ajgrty.webp" />
+        </div>
+        </div>
+        </div>
+        <div class ="Sec-3-2" >
+         <img class ="i-3" src="images/cover.webp" />
+         <img class ="i-4" src="images/iPhone_wgconp_j0d1fn.webp" />
+        </div>
+    </section>
+
+    <footer>
+     <img class="footi" src="images/download.png" width="200px" height="120px"/>
+     <p class="footp" style="color: white; font-size: 21px;">&copy; 2022 Abhi's kitchen</p>
+     <div class="foot" style="width: 200px; display: flex; justify-content: space-between; align-items: center;">
+    <img src="images/facebook.webp" width="24" height="24"/>
+    <img src="images/icon-pinterest.webp" width="24" height="24"/>
+    <img src="images/icon-instagram.webp" width="24" height="24"/>
+    <img src="images/icon-twitter.webp" width="24" height="24"/>
+    </div>
+    </footer>
+    <script src="home.js"></script>
+    <script src="secondpage.html"></script>
+    
+    <script type="text/javascript">
+      const instance = new Typewriter("#typewriter", {
+        strings: [
+          "Feeling hungry?",
+          "Unexpected guests?",
+          "Cooking gone wrong?",
+          "Game night?",
+          "Movie marathon?"
+        ],
+        autoStart: true,
+        loop: true
+      });
+      
+function runModal1()
+{
+
+var modal = document.getElementById("myModal1");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn1");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+}
+
+function runModal2(){
+var modal = document.getElementById("myModal2");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn2");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+}
+
+</script>
+
+</body>
+</html>
